@@ -1,23 +1,15 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
-import { Router } from "react-router-dom";
-import { createBrowserHistory } from "history";
+import { BrowserRouter } from "react-router-dom";
 
 import App from "./App";
-
-const history = createBrowserHistory();
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <Router history={history}>
+    <BrowserRouter>
       <App />
-    </Router>
+    </BrowserRouter>
   </StrictMode>,
   rootElement
 );
-
-history.listen((location) => {
-  window.ga("set", "page", location.pathname + location.search);
-  window.ga("send", "pageview");
-});
