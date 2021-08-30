@@ -43,7 +43,7 @@ const AppRoute = () => {
             Awesome dad jokes
           </ProductCard>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
           <ProductCard image="https://awesomestufftobuy.com/wp-content/uploads/2019/12/pac-man-ghost-lamp-2-450x412.jpg">
             Awesome pacman light
           </ProductCard>

@@ -15,7 +15,7 @@ const ProductCard = (props) => {
           <img width="90%" height="200px" src={props.image} alt="product" />
         </CardMedia>
         <CardContent>
-          <Typography variant="h6">{props.children}</Typography>
+          <Typography variant="body1">{props.children}</Typography>
         </CardContent>
         <Button variant="contained" color="secondary">
           Buy now
