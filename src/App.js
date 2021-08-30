@@ -5,16 +5,11 @@ import AppRoute from "./AppRoute";
 import ContactRoute from "./Contact";
 import { createTheme, CssBaseline, ThemeProvider } from "@material-ui/core";
 import { Route, Switch } from "react-router-dom";
-
-const theme = createTheme({
-  palette: {
-    secondary: {
-      main: "#e74235"
-    }
-  }
-});
+import useGoogleAnalytics from "./useGoogleAnalytics";
 
 export default function App() {
+  useGoogleAnalytics();
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -37,3 +32,11 @@ export default function App() {
     </ThemeProvider>
   );
 }
+
+const theme = createTheme({
+  palette: {
+    secondary: {
+      main: "#e74235"
+    }
+  }
+});

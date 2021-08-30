@@ -1,10 +1,8 @@
 import { Box, Grid, Typography, TextField, Button } from "@material-ui/core";
 import { useForm } from "react-hook-form";
-import useGA from "./useGA";
 
 const ContactRoute = () => {
-  useGA();
-  const { register, handleSubmit, errors } = useForm();
+  const { register, errors } = useForm();
 
   return (
     <Box margin="4vh 2vw" textAlign="center">

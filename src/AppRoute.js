@@ -1,12 +1,7 @@
-import { useEffect } from "react";
 import { Box, Grid, Typography } from "@material-ui/core";
-import { useLocation } from "react-router-dom";
 import ProductCard from "./ProductCard";
-import useGA from "./useGA";
 
 const AppRoute = () => {
-  useGA();
-
   return (
     <Box margin="18px 42px" textAlign="center">
       <Typography gutterBottom variant="h3" component="h1">

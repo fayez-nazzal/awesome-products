@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 
-const useGA = () => {
+const useGoogleAnalytics = () => {
   const history = useHistory();
 
   useEffect(() => {
@@ -14,9 +14,9 @@ const useGA = () => {
         page_path: history.location.pathname
       });
     }
-  }, []);
+  }, [history]);
 
   return window.ga;
 };
 
-export default useGA;
+export default useGoogleAnalytics;
