@@ -1,16 +1,11 @@
 import { useEffect } from "react";
-import { makeStyles, Box, Grid, Typography } from "@material-ui/core";
+import { Box, Grid, Typography } from "@material-ui/core";
 import { useLocation } from "react-router-dom";
 import ProductCard from "./ProductCard";
+import useGA from "./useGA";
 
 const AppRoute = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    console.log("ga..", location.pathnamem, window.ga);
-    window.ga("set", "page", location.pathname + location.search);
-    window.ga("send", "pageview");
-  });
+  useGA();
 
   return (
     <Box margin="18px 42px" textAlign="center">

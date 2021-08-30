@@ -1,8 +1,9 @@
 import { makeStyles, Typography, Box } from "@material-ui/core";
 import chartSrc from "./images/chart.png";
+import useGA from "./useGA";
 
 const Home = () => {
-  const classes = useStyles();
+  useGA();
 
   return (
     <Box margin="64px 16px" textAlign="center">
