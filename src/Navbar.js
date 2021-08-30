@@ -43,7 +43,13 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bolder",
     color: "#ec443c",
     textDecoration: "none",
-    fontSize: "24px",
+    fontSize: "3.8vw",
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "3.3vw"
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: "2vw"
+    },
     textShadow: "-0.8px -0.8px #fff"
   },
   link: {

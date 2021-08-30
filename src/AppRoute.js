@@ -13,32 +13,32 @@ const AppRoute = () => {
         Awesome products to buy
       </Typography>
       <Grid container spacing={3}>
-        <Grid item xs={3}>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
           <ProductCard image="https://m.media-amazon.com/images/I/61bZEnqQdPL._AC_SX425_.jpg">
             Awesome dinasour lamp
           </ProductCard>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
           <ProductCard image="https://m.media-amazon.com/images/I/71NYoSQ5MvL._AC_SY879_.jpg">
             Awesome sword house key
           </ProductCard>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
           <ProductCard image="https://awesomestufftobuy.com/wp-content/uploads/2020/11/keurig-k-mini-coffee-maker-450x450.jpg">
             Awesome coffee maker
           </ProductCard>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
           <ProductCard image="https://m.media-amazon.com/images/I/61o9g6eWtwL._AC_SX425_.jpg">
             Awesome edison lights
           </ProductCard>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
           <ProductCard image="https://awesomestufftobuy.com/wp-content/uploads/2020/01/into-focus-mug.jpg">
             Awesome focus mug
           </ProductCard>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
           <ProductCard image="https://awesomestufftobuy.com/wp-content/uploads/2020/01/dad-jokes-book-2-450x465.jpg">
             Awesome dad jokes
           </ProductCard>
@@ -48,7 +48,7 @@ const AppRoute = () => {
             Awesome pacman light
           </ProductCard>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
           <ProductCard image="https://awesomestufftobuy.com/wp-content/uploads/2019/01/office-buzzwords-coffee-mugs-3-450x450.jpeg">
             Awesome office mug
           </ProductCard>

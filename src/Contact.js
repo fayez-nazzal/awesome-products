@@ -7,14 +7,14 @@ const ContactRoute = () => {
   const { register, handleSubmit, errors } = useForm();
 
   return (
-    <Box margin="18px 42px" textAlign="center">
+    <Box margin="4vh 2vw" textAlign="center">
       <Typography gutterBottom variant="h3" component="h1">
         Contact us
       </Typography>
       <form>
-        <Box margin="0 120px">
+        <Box margin="0 5vw">
           <Grid container spacing={3}>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={6} md={4}>
               <TextField
                 fullWidth
                 label="name"
@@ -23,7 +23,7 @@ const ContactRoute = () => {
                 error={errors?.name}
               />
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={6} md={8}>
               <TextField
                 fullWidth
                 label="email"
